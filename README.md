@@ -1,101 +1,39 @@
-Males deskripsi pake ai aja wkwk
+﻿# Sistem Rapor Digital
 
-# 🎮 Game Tebak Angka
+Program C untuk mengolah nilai mahasiswa pada tiga mata kuliah: Algoritma, Pemrograman, dan Basis Data. Program menerima data 1–5 mahasiswa, lalu menampilkan rapor dan ringkasan nilai.
 
-Program permainan tebak angka sederhana menggunakan bahasa **C**.
+## Fitur
 
-## 📌 Deskripsi
+- Memvalidasi jumlah mahasiswa dan nilai dalam rentang 0–100.
+- Menghitung rata-rata, grade, dan status kelulusan setiap mahasiswa.
+- Menampilkan nilai tertinggi dan terendah beserta mata kuliahnya.
+- Menampilkan mahasiswa dengan rata-rata terbaik.
+- Menyediakan pencarian mahasiswa berdasarkan nama.
 
-Pemain harus menebak angka yang telah dipilih secara acak oleh komputer. Pemain menentukan jumlah kesempatan sebelum permainan dimulai.
+## Menjalankan Program
 
-Setiap tebakan akan diberikan petunjuk apakah angka yang dimasukkan **terlalu kecil** atau **terlalu besar**.
-
-## ✨ Fitur
-
-* 🎲 Angka rahasia dibuat secara random
-* 🔢 Rentang angka 1–100
-* 🎯 Jumlah percobaan dapat ditentukan pemain
-* 🔄 Menggunakan konsep **rekursi**
-* 📍 Menggunakan **pointer**
-* 📊 Menghitung jumlah percobaan
-* 🏆 Memberikan predikat berdasarkan jumlah percobaan
-* 📈 Menampilkan akurasi permainan
-* 🔁 Pemain dapat mengulangi permainan
-
-## 🛠️ Konsep yang Digunakan
-
-Program ini menggunakan beberapa konsep dasar bahasa C:
-
-* Function
-* Recursion
-* Pointer
-* Looping
-* Conditional Statement
-* Random Number
-* `scanf()` dan `printf()`
-
-## ▶️ Cara Menjalankan
-
-Compile program menggunakan compiler C:
+Kompilasi dengan GCC:
 
 ```bash
-gcc main.c -o tebak-angka
+gcc A_PKP04_21114022610041_RAFIF_ARVAZEAN.c -o rapor
 ```
 
-Kemudian jalankan:
+Jalankan di Windows:
+
+```powershell
+.\rapor.exe
+```
+
+Jalankan di Linux atau macOS:
 
 ```bash
-./tebak-angka
+./rapor
 ```
 
-Pada Windows:
+## Konsep Bahasa C
 
-```bash
-tebak-angka.exe
-```
+Program menggunakan fungsi, array dua dimensi, perulangan, percabangan, input-output, dan validasi data.
 
-## 🎮 Contoh Permainan
+## Penulis
 
-```text
-==========================================
-          PERMAINAN TEBAK ANGKA
-==========================================
-Selamat datang di permainan!
-Machine telah memilih angka 1 - 100.
-==========================================
-
-Mau berapa percobaan : 1
-
-==========================================
-              GAME DIMULAI!
-==========================================
-  Kamu memiliki 1 kesempatan.
-==========================================
-
-Masukkan tebakkan anda (1 - 100) : 46
-
-Selamat! anda berhasil 
-menebak angka 46 dengan 1 percobaan.
-
-==========================================
-             HASIL PERMAINAN
-==========================================
-  Angka yang benar : 46
-  Predikat         : Perfect
-  Jumlah percobaan : 1
-  Akurasi          : 100.00%
-==========================================
-Ulangi gamenya? (Y/N) : 
-```
-
-## 📂 File
-
-```text
-tebak-angka-c/
-├── tebak_angka.c
-└── README.md
-```
-
-## 👨‍💻 Author
-
-**Rafif Arvazean**
+Rafif Arvazean
