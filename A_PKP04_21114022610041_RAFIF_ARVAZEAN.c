@@ -347,13 +347,20 @@ int mahasiswaTerbaik(float avg[], int jumlah)
 
 int cariMahasiswa(char cari[30], char nama[][30], int jumlah)
 {
-    int list = 0;
     for (int i = 0; i < jumlah; i++)
     {
-        if (nama[i] == cari)
+        int j = 0;
+
+        while (nama[i][j] == cari[j] && nama[i][j] != '\0')
         {
-            list = i;
+            j++;
+        }
+
+        if (nama[i][j] == '\0' && cari[j] == '\0')
+        {
+            return i;
         }
     }
-    return list;
+
+    return -1;
 }
